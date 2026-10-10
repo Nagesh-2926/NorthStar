@@ -1,0 +1,70 @@
+{
+  "fixture_version": "coordinator-upload-fixture-v1",
+  "purpose": "Isolated development/test validation of coordinator CSV uploads only.",
+  "synthetic_identifier_notice": "Synthetic enrollment numbers are test fixtures. They are not institution-issued, do not identify real students, and must never be seeded into production.",
+  "reserved_block": {
+    "prefix": "24030315",
+    "first": "2403031590000",
+    "last": "2403031599999",
+    "assigned_first": "2403031590000",
+    "assigned_last": "2403031590035",
+    "assigned_count": 37
+  },
+  "collision_checks": {
+    "issued_numbers_checked": 28793,
+    "issued_high_water_mark": "2403031528793",
+    "collisions": 0
+  },
+  "source": {
+    "dataset": "data/processed/student_training_dataset.csv",
+    "partition": "student-disjoint held-out test (2014J after purging train/validation students)",
+    "eligible_candidates": 7626,
+    "excluded_candidates": {},
+    "selection": "Sort by source_record_id; first 3 per module for full-sequence valid rows, then the next rows with week-1 and week-8 activity and an observed assessment mean for aggregate-only and rejection cases."
+  },
+  "files": {
+    "coordinator_upload_valid.test.csv": 23,
+    "coordinator_upload_rejections.test.csv": 14,
+    "synthetic_enrollment_mapping.test-only.csv": 37
+  },
+  "upload_columns": [
+    "enrollment_number",
+    "registration_day",
+    "num_of_prev_attempts",
+    "studied_credits",
+    "early_assessment_mean",
+    "early_assessment_count",
+    "early_on_time_rate",
+    "early_assessment_coverage",
+    "early_vle_clicks",
+    "early_vle_active_days",
+    "early_vle_active_weeks",
+    "early_vle_active_sites",
+    "early_vle_activity_types",
+    "code_module",
+    "code_presentation",
+    "week_1_clicks",
+    "week_1_active_days",
+    "week_2_clicks",
+    "week_2_active_days",
+    "week_3_clicks",
+    "week_3_active_days",
+    "week_4_clicks",
+    "week_4_active_days",
+    "week_5_clicks",
+    "week_5_active_days",
+    "week_6_clicks",
+    "week_6_active_days",
+    "week_7_clicks",
+    "week_7_active_days",
+    "week_8_clicks",
+    "week_8_active_days"
+  ],
+  "missing_value_representation": "empty field",
+  "seeded_numbers": 27,
+  "sha256": {
+    "coordinator_upload_valid.test.csv": "6a15e37cc702c9a05b65ca06c02954061b365b851d6517e5bede07052fdb5ffd",
+    "coordinator_upload_rejections.test.csv": "ffff3e00539c8471cc1b81baee7f39b5a20077855b246298a45fdcfcd828ad39",
+    "synthetic_enrollment_mapping.test-only.csv": "55a86ff3772d73e66567e8981df548c24104ddcb0e925e7354a4f006e69f1ede"
+  }
+}

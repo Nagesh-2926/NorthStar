@@ -1,0 +1,4419 @@
+{
+  "browser": "Headless Chromium, standalone Playwright (browser plugin had no connected session)",
+  "url": "http://127.0.0.1:5173/coordinator/imports",
+  "widths": [
+    1440,
+    375,
+    390
+  ],
+  "fixture": "D:\\AIML_BOOTCAMP\\project\\NorthStar\\data\\test_fixtures\\coordinator_upload\\coordinator_upload_valid.test.csv",
+  "checks": [
+    {
+      "width": 1440,
+      "name": "initial",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "validation-only",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "confirmed",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "technical-expanded",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          },
+          {
+            "x": 317,
+            "right": 1371,
+            "width": 1054,
+            "client": 1054,
+            "scroll": 1054,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "technical-collapsed",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "validation-rejected",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "partial-import",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          },
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "already-imported",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "unconfirmed-response",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "all-rejected",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "validation-loading",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validating…",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "import-loading",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Running models…",
+            "x": 405,
+            "right": 550,
+            "width": 145,
+            "client": 143,
+            "scroll": 143
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "validation-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "import-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "network-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "long-filename",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "replaced-file-during-validation",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "show-all",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Show first 25",
+            "x": 1302,
+            "right": 1385,
+            "width": 83,
+            "client": 81,
+            "scroll": 81
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 1440,
+      "name": "preview-restored",
+      "passed": true,
+      "geometry": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 303,
+            "right": 458,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082
+          },
+          {
+            "text": "Validate file",
+            "x": 303,
+            "right": 393,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 405,
+            "right": 557,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Show all 28",
+            "x": 1309,
+            "right": 1385,
+            "width": 76,
+            "client": 74,
+            "scroll": 74
+          },
+          {
+            "text": "Technical details",
+            "x": 304,
+            "right": 1384,
+            "width": 1080,
+            "client": 1080,
+            "scroll": 1080
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 303,
+            "right": 1385,
+            "width": 1082,
+            "client": 1082,
+            "scroll": 1082,
+            "overflow": "auto"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "initial",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "validation-only",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "confirmed",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "technical-expanded",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          },
+          {
+            "x": 42,
+            "right": 333,
+            "width": 291,
+            "client": 291,
+            "scroll": 291,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "technical-collapsed",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "validation-rejected",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "partial-import",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          },
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "already-imported",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "unconfirmed-response",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "all-rejected",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "validation-loading",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validating…",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "import-loading",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Running models…",
+            "x": 130,
+            "right": 275,
+            "width": 145,
+            "client": 143,
+            "scroll": 143
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "validation-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "import-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "network-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "long-filename",
+      "passed": false,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 491,
+        "bodyWidth": 491,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "replaced-file-during-validation",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "show-all",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Show first 25",
+            "x": 264,
+            "right": 347,
+            "width": 83,
+            "client": 81,
+            "scroll": 81
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 375,
+      "name": "preview-restored",
+      "passed": true,
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Show all 28",
+            "x": 271,
+            "right": 347,
+            "width": 76,
+            "client": 74,
+            "scroll": 74
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "initial",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "validation-only",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "confirmed",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "technical-expanded",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          },
+          {
+            "x": 42,
+            "right": 348,
+            "width": 306,
+            "client": 306,
+            "scroll": 306,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "technical-collapsed",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "validation-rejected",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "partial-import",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          },
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "already-imported",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "unconfirmed-response",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "all-rejected",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "validation-loading",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validating…",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "import-loading",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Running models…",
+            "x": 130,
+            "right": 275,
+            "width": 145,
+            "client": 143,
+            "scroll": 143
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "validation-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "import-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "network-error",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "long-filename",
+      "passed": false,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 491,
+        "bodyWidth": 491,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "replaced-file-during-validation",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          }
+        ],
+        "wrappers": [],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "show-all",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Show first 25",
+            "x": 279,
+            "right": 362,
+            "width": 83,
+            "client": 81,
+            "scroll": 81
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "preview-restored",
+      "passed": true,
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Show all 28",
+            "x": 286,
+            "right": 362,
+            "width": 76,
+            "client": 74,
+            "scroll": 74
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    }
+  ],
+  "requests": [
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/overview",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/risk-trends",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/engagement",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/clusters",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/predictions",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/monitoring/students",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/overview",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/risk-trends",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/engagement",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/clusters",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/predictions",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/analytics/monitoring/students",
+      "action": "blocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 1440,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/overview",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/risk-trends",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/engagement",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/clusters",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/predictions",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/monitoring/students",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/overview",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/risk-trends",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/engagement",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/clusters",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/predictions",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/analytics/monitoring/students",
+      "action": "blocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 375,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/auth/login",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/overview",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/risk-trends",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/engagement",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/clusters",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/predictions",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/monitoring/students",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/overview",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/risk-trends",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/engagement",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/clusters",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/predictions",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/analytics/monitoring/students",
+      "action": "blocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "path": "/api/auth/me",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports/validate",
+      "action": "mocked"
+    },
+    {
+      "width": 390,
+      "method": "POST",
+      "path": "/api/imports",
+      "action": "mocked"
+    }
+  ],
+  "runtimeErrors": [],
+  "screenshots": [
+    "1440-initial.png",
+    "1440-validation-only.png",
+    "1440-confirmed.png",
+    "1440-technical-expanded.png",
+    "1440-validation-rejected.png",
+    "1440-partial-import.png",
+    "1440-already-imported.png",
+    "1440-unconfirmed-response.png",
+    "1440-all-rejected.png",
+    "1440-validation-loading.png",
+    "1440-import-loading.png",
+    "1440-validation-error.png",
+    "1440-import-error.png",
+    "1440-network-error.png",
+    "1440-long-filename.png",
+    "1440-replaced-file-during-validation.png",
+    "375-initial.png",
+    "375-validation-only.png",
+    "375-confirmed.png",
+    "375-technical-expanded.png",
+    "375-validation-rejected.png",
+    "375-partial-import.png",
+    "375-already-imported.png",
+    "375-unconfirmed-response.png",
+    "375-all-rejected.png",
+    "375-validation-loading.png",
+    "375-import-loading.png",
+    "375-validation-error.png",
+    "375-import-error.png",
+    "375-network-error.png",
+    "375-long-filename.png",
+    "375-replaced-file-during-validation.png",
+    "390-initial.png",
+    "390-validation-only.png",
+    "390-confirmed.png",
+    "390-technical-expanded.png",
+    "390-validation-rejected.png",
+    "390-partial-import.png",
+    "390-already-imported.png",
+    "390-unconfirmed-response.png",
+    "390-all-rejected.png",
+    "390-validation-loading.png",
+    "390-import-loading.png",
+    "390-validation-error.png",
+    "390-import-error.png",
+    "390-network-error.png",
+    "390-long-filename.png",
+    "390-replaced-file-during-validation.png"
+  ],
+  "failures": [
+    {
+      "width": 375,
+      "name": "long-filename",
+      "geometry": {
+        "viewport": 375,
+        "documentWidth": 491,
+        "bodyWidth": 491,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 346,
+            "width": 317,
+            "client": 317,
+            "scroll": 317
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 347,
+            "width": 319,
+            "client": 319,
+            "scroll": 319,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    },
+    {
+      "width": 390,
+      "name": "long-filename",
+      "geometry": {
+        "viewport": 390,
+        "documentWidth": 491,
+        "bodyWidth": 491,
+        "controls": [
+          {
+            "text": " Download template",
+            "x": 28,
+            "right": 183,
+            "width": 155,
+            "client": 153,
+            "scroll": 153
+          },
+          {
+            "text": "coordinator-csv",
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334
+          },
+          {
+            "text": "Validate file",
+            "x": 28,
+            "right": 118,
+            "width": 90,
+            "client": 88,
+            "scroll": 88
+          },
+          {
+            "text": "Import and analyze",
+            "x": 130,
+            "right": 282,
+            "width": 152,
+            "client": 150,
+            "scroll": 150
+          },
+          {
+            "text": "Technical details",
+            "x": 29,
+            "right": 361,
+            "width": 332,
+            "client": 332,
+            "scroll": 332
+          }
+        ],
+        "wrappers": [
+          {
+            "x": 28,
+            "right": 362,
+            "width": 334,
+            "client": 334,
+            "scroll": 334,
+            "overflow": "visible"
+          }
+        ],
+        "clipped": []
+      }
+    }
+  ],
+  "version": "149.0.7827.55",
+  "selectionRace": [
+    {
+      "width": 1440,
+      "staleValidationShown": true
+    },
+    {
+      "width": 375,
+      "staleValidationShown": true
+    },
+    {
+      "width": 390,
+      "staleValidationShown": true
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Responsive geometry failures; see results.json\n\n2 !== 0\n\n    at run (D:\\AIML_BOOTCAMP\\project\\NorthStar\\reports\\csv_ui_browser_verification\\verify.cjs:245:10)"
+}

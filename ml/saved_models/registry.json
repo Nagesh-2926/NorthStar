@@ -1,0 +1,115 @@
+{
+  "registry_version": 1,
+  "models": [
+    {
+      "name": "logistic_regression",
+      "version": "1.2.0",
+      "training_date_utc": "2026-10-09T09:55:59.861839+00:00",
+      "dataset_version": "501aac93b2fbf49bb160ddd567af7b5d6213d220937cf8098e2955476c426024",
+      "feature_version": "oulad-early-risk-v2",
+      "metrics": {
+        "threshold": 0.058688,
+        "accuracy": 0.3637555730396014,
+        "precision": 0.3595772787318362,
+        "recall": 0.9985326485693323,
+        "f1": 0.5287490287490287,
+        "f2": 0.736711053372307,
+        "roc_auc": 0.7641709464416728,
+        "confusion_matrix": {
+          "tn": 52,
+          "fp": 4848,
+          "fn": 4,
+          "tp": 2722
+        }
+      },
+      "selected": false,
+      "path": "ml/saved_models/logistic_regression.joblib"
+    },
+    {
+      "name": "random_forest",
+      "version": "1.2.0",
+      "training_date_utc": "2026-10-09T09:55:59.861839+00:00",
+      "dataset_version": "501aac93b2fbf49bb160ddd567af7b5d6213d220937cf8098e2955476c426024",
+      "feature_version": "oulad-early-risk-v2",
+      "metrics": {
+        "threshold": 0.238475,
+        "accuracy": 0.5544190925780226,
+        "precision": 0.44107330761136443,
+        "recall": 0.9225972120322817,
+        "f1": 0.5968201233981965,
+        "f2": 0.7572564133445743,
+        "roc_auc": 0.7781155763846258,
+        "confusion_matrix": {
+          "tn": 1713,
+          "fp": 3187,
+          "fn": 211,
+          "tp": 2515
+        }
+      },
+      "selected": false,
+      "path": "ml/saved_models/random_forest.joblib"
+    },
+    {
+      "name": "xgboost",
+      "version": "1.2.0",
+      "training_date_utc": "2026-10-09T09:55:59.861839+00:00",
+      "dataset_version": "501aac93b2fbf49bb160ddd567af7b5d6213d220937cf8098e2955476c426024",
+      "feature_version": "oulad-early-risk-v2",
+      "metrics": {
+        "threshold": 0.189824,
+        "accuracy": 0.5169158143194336,
+        "precision": 0.4217831482691052,
+        "recall": 0.9475421863536317,
+        "f1": 0.583728813559322,
+        "f2": 0.7584566596194503,
+        "roc_auc": 0.7697754428256995,
+        "confusion_matrix": {
+          "tn": 1359,
+          "fp": 3541,
+          "fn": 143,
+          "tp": 2583
+        }
+      },
+      "selected": true,
+      "path": "ml/saved_models/xgboost.joblib"
+    },
+    {
+      "name": "kmeans_behavioral",
+      "version": "1.2.0",
+      "training_date_utc": "2026-10-09T09:55:59.861839+00:00",
+      "dataset_version": "501aac93b2fbf49bb160ddd567af7b5d6213d220937cf8098e2955476c426024",
+      "feature_version": "oulad-early-risk-v2",
+      "metrics": {
+        "selected_k": 2,
+        "silhouette": 0.4879266512477512
+      },
+      "selected": false,
+      "path": "ml/saved_models/kmeans.joblib"
+    },
+    {
+      "name": "lstm_weekly",
+      "version": "1.1.0",
+      "training_date_utc": "2026-10-07T19:01:41.738506+00:00",
+      "dataset_version": "501aac93b2fbf49bb160ddd567af7b5d6213d220937cf8098e2955476c426024",
+      "feature_version": "oulad-early-risk-v1",
+      "metrics": {
+        "threshold": 0.193651,
+        "accuracy": 0.4127983215316024,
+        "precision": 0.3766891891891892,
+        "recall": 0.9816581071166545,
+        "f1": 0.5444557477110885,
+        "f2": 0.7430031097290093,
+        "roc_auc": 0.7211601060086543,
+        "confusion_matrix": {
+          "tn": 472,
+          "fp": 4428,
+          "fn": 50,
+          "tp": 2676
+        }
+      },
+      "selected": false,
+      "path": "ml/saved_models/lstm_weekly.keras",
+      "preprocessing_path": "ml/saved_models/lstm_preprocessing.joblib"
+    }
+  ]
+}

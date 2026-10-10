@@ -1,0 +1,126 @@
+{
+  "passed": 24,
+  "failed": 0,
+  "results": [
+    {
+      "check": "health is 200 and reveals only status",
+      "pass": true,
+      "detail": "{\"status\":\"ok\"}"
+    },
+    {
+      "check": "PNA preflight /api/auth/login from http://127.0.0.1:5173",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "PNA preflight /api/auth/register from http://127.0.0.1:5173",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "PNA preflight /api/auth/login from http://localhost:5173",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "PNA preflight /api/auth/register from http://localhost:5173",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "PNA preflight GET /api/students with Authorization header",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "unlisted origin preflight rejected",
+      "pass": true,
+      "detail": "400"
+    },
+    {
+      "check": "unlisted origin gets no allow-origin on actual request",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "login with missing fields -> 422",
+      "pass": true,
+      "detail": "422"
+    },
+    {
+      "check": "login with unknown account -> 401 'Invalid email or password'",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "register with invalid body -> 422 (no write)",
+      "pass": true,
+      "detail": "422"
+    },
+    {
+      "check": "coordinator register with wrong invite -> 403 (checked before any write)",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "check": "no token -> 401 /api/auth/me",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/students",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/students/me",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/analytics/overview",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/predictions",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/interventions",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/imports/template",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/access-requests",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "malformed token -> 401",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "route registered POST /api/auth/login",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "route registered POST /api/auth/register",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "route registered GET /api/auth/me",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

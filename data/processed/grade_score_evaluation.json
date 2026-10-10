@@ -1,0 +1,62 @@
+{
+  "target": "final_exam_score",
+  "label_definition": "Observed score (0-100) for the OULAD assessment_type=Exam, among students who submitted it.",
+  "prediction_horizon": "Features available through course-relative day 55; target is the later end-of-course exam score.",
+  "supported_modules": [
+    "CCC",
+    "DDD"
+  ],
+  "source_rows": 4959,
+  "module_rows": {
+    "DDD": 3044,
+    "CCC": 1915
+  },
+  "presentation_rows": {
+    "2014J": 2118,
+    "2014B": 1271,
+    "2013J": 968,
+    "2013B": 602
+  },
+  "split": {
+    "train_presentations": [
+      "2013B",
+      "2013J"
+    ],
+    "validation_presentation": "2014B",
+    "test_presentation": "2014J",
+    "student_disjoint": true,
+    "rows": {
+      "train": 1570,
+      "validation": 1179,
+      "test": 1944
+    },
+    "unique_students": {
+      "train": 1570,
+      "validation": 1169,
+      "test": 1894
+    }
+  },
+  "model": "RandomForestRegressor(n_estimators=120,min_samples_leaf=5,max_features=0.9,random_state=42)",
+  "validation": {
+    "mae": 16.432173,
+    "rmse": 19.696965,
+    "r2": 0.111424
+  },
+  "test": {
+    "mae": 14.744337,
+    "rmse": 17.81503,
+    "r2": 0.306186
+  },
+  "training_mean_baseline_test": {
+    "mae": 18.270205,
+    "rmse": 21.7516,
+    "r2": -0.034313
+  },
+  "limitations": [
+    "Prediction population is limited to students who eventually submitted an exam; non-submitters have no numeric target.",
+    "Only CCC and DDD have observed exam scores in this OULAD source release.",
+    "2014J is one historical held-out presentation and is not external validation.",
+    "The score is an exam assessment score, not an overall course grade or a guaranteed outcome."
+  ],
+  "created_at_utc": "2026-10-09T09:56:07.105381+00:00"
+}

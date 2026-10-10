@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="610" font-family="sans-serif" font-size="12"><rect width="100%" height="100%" fill="white"/>
+<text x="260.0" y="24" text-anchor="middle" font-size="14">Validation 2014B reliability (n=5634, 10 equal-width bins)</text>
+<rect x="60" y="60" width="400" height="400" fill="none" stroke="#999"/>
+<line x1="60" y1="460" x2="460" y2="60" stroke="#bbb" stroke-dasharray="4 4"/>
+<text x="60.0" y="476" text-anchor="middle">0.0</text>
+<text x="52" y="464.0" text-anchor="end">0.0</text>
+<text x="140.0" y="476" text-anchor="middle">0.2</text>
+<text x="52" y="384.0" text-anchor="end">0.2</text>
+<text x="220.0" y="476" text-anchor="middle">0.4</text>
+<text x="52" y="304.0" text-anchor="end">0.4</text>
+<text x="300.0" y="476" text-anchor="middle">0.6</text>
+<text x="52" y="223.99999999999997" text-anchor="end">0.6</text>
+<text x="380.0" y="476" text-anchor="middle">0.8</text>
+<text x="52" y="144.0" text-anchor="end">0.8</text>
+<text x="460.0" y="476" text-anchor="middle">1.0</text>
+<text x="52" y="64.0" text-anchor="end">1.0</text>
+<text x="260.0" y="502" text-anchor="middle">Mean predicted score in bin</text>
+<text x="16" y="260.0" text-anchor="middle" transform="rotate(-90 16 260.0)">Observed positive rate (95% Wilson CI)</text>
+<polyline points="89.2,429.4 120.8,404.4 160.4,361.3 200.1,342.6 239.1,295.8 276.7,265.4 318.1,232.9 360.2,212.0 401.0,136.1 441.3,87.4" fill="none" stroke="#d62728" stroke-width="1.5"/>
+<line x1="89.2" y1="440.9" x2="89.2" y2="411.7" stroke="#d62728"/>
+<circle cx="89.2" cy="429.4" r="4.9" fill="#d62728" fill-opacity="0.6"/>
+<line x1="120.8" y1="413.8" x2="120.8" y2="393.4" stroke="#d62728"/>
+<circle cx="120.8" cy="404.4" r="7.4" fill="#d62728" fill-opacity="0.6"/>
+<line x1="160.4" y1="372.6" x2="160.4" y2="349.2" stroke="#d62728"/>
+<circle cx="160.4" cy="361.3" r="7.9" fill="#d62728" fill-opacity="0.6"/>
+<line x1="200.1" y1="354.3" x2="200.1" y2="330.1" stroke="#d62728"/>
+<circle cx="200.1" cy="342.6" r="8.0" fill="#d62728" fill-opacity="0.6"/>
+<line x1="239.1" y1="309.3" x2="239.1" y2="281.9" stroke="#d62728"/>
+<circle cx="239.1" cy="295.8" r="7.7" fill="#d62728" fill-opacity="0.6"/>
+<line x1="276.7" y1="283.2" x2="276.7" y2="247.6" stroke="#d62728"/>
+<circle cx="276.7" cy="265.4" r="6.5" fill="#d62728" fill-opacity="0.6"/>
+<line x1="318.1" y1="255.5" x2="318.1" y2="211.1" stroke="#d62728"/>
+<circle cx="318.1" cy="232.9" r="5.5" fill="#d62728" fill-opacity="0.6"/>
+<line x1="360.2" y1="235.3" x2="360.2" y2="190.0" stroke="#d62728"/>
+<circle cx="360.2" cy="212.0" r="5.4" fill="#d62728" fill-opacity="0.6"/>
+<line x1="401.0" y1="152.4" x2="401.0" y2="122.2" stroke="#d62728"/>
+<circle cx="401.0" cy="136.1" r="6.1" fill="#d62728" fill-opacity="0.6"/>
+<line x1="441.3" y1="95.6" x2="441.3" y2="81.0" stroke="#d62728"/>
+<circle cx="441.3" cy="87.4" r="7.5" fill="#d62728" fill-opacity="0.6"/>
+<rect x="60" y="530" width="14" height="14" fill="#d62728"/>
+<text x="80" y="542">Raw stage-1 XGBoost scores</text>
+<polyline points="90.2,426.8 121.2,395.8 160.4,363.1 199.6,320.2 237.5,274.6 278.8,243.7 319.4,226.8 360.5,162.9 401.2,117.0 437.6,77.9" fill="none" stroke="#1f77b4" stroke-width="1.5"/>
+<line x1="90.2" y1="438.5" x2="90.2" y2="409.6" stroke="#1f77b4"/>
+<circle cx="90.2" cy="426.8" r="4.9" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="121.2" y1="405.1" x2="121.2" y2="385.2" stroke="#1f77b4"/>
+<circle cx="121.2" cy="395.8" r="7.5" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="160.4" y1="373.4" x2="160.4" y2="352.1" stroke="#1f77b4"/>
+<circle cx="160.4" cy="363.1" r="8.0" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="199.6" y1="331.8" x2="199.6" y2="308.0" stroke="#1f77b4"/>
+<circle cx="199.6" cy="320.2" r="8.0" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="237.5" y1="289.0" x2="237.5" y2="260.0" stroke="#1f77b4"/>
+<circle cx="237.5" cy="274.6" r="7.1" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="278.8" y1="264.8" x2="278.8" y2="223.0" stroke="#1f77b4"/>
+<circle cx="278.8" cy="243.7" r="5.5" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="319.4" y1="251.1" x2="319.4" y2="203.4" stroke="#1f77b4"/>
+<circle cx="319.4" cy="226.8" r="5.1" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="360.5" y1="183.4" x2="360.5" y2="144.7" stroke="#1f77b4"/>
+<circle cx="360.5" cy="162.9" r="5.4" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="401.2" y1="131.8" x2="401.2" y2="104.8" stroke="#1f77b4"/>
+<circle cx="401.2" cy="117.0" r="5.9" fill="#1f77b4" fill-opacity="0.6"/>
+<line x1="437.6" y1="86.3" x2="437.6" y2="72.1" stroke="#1f77b4"/>
+<circle cx="437.6" cy="77.9" r="6.4" fill="#1f77b4" fill-opacity="0.6"/>
+<rect x="60" y="556" width="14" height="14" fill="#1f77b4"/>
+<text x="80" y="568">Platt, 5-fold OOF (repeat 1)</text>
+<polyline points="73.0,438.5 116.8,392.6 159.7,367.7 196.1,325.3 242.1,270.1 276.4,253.4 325.5,190.2 366.5,140.0 401.2,125.2 442.1,78.8" fill="none" stroke="#2ca02c" stroke-width="1.5"/>
+<line x1="73.0" y1="449.5" x2="73.0" y2="417.2" stroke="#2ca02c"/>
+<circle cx="73.0" cy="438.5" r="4.0" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="116.8" y1="401.8" x2="116.8" y2="382.2" stroke="#2ca02c"/>
+<circle cx="116.8" cy="392.6" r="7.2" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="159.7" y1="377.0" x2="159.7" y2="357.8" stroke="#2ca02c"/>
+<circle cx="159.7" cy="367.7" r="8.0" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="196.1" y1="339.1" x2="196.1" y2="310.8" stroke="#2ca02c"/>
+<circle cx="196.1" cy="325.3" r="6.6" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="242.1" y1="284.2" x2="242.1" y2="256.0" stroke="#2ca02c"/>
+<circle cx="242.1" cy="270.1" r="6.9" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="276.4" y1="268.9" x2="276.4" y2="238.0" stroke="#2ca02c"/>
+<circle cx="276.4" cy="253.4" r="6.4" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="325.5" y1="216.5" x2="325.5" y2="166.4" stroke="#2ca02c"/>
+<circle cx="325.5" cy="190.2" r="4.5" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="366.5" y1="168.5" x2="366.5" y2="117.5" stroke="#2ca02c"/>
+<circle cx="366.5" cy="140.0" r="4.1" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="401.2" y1="140.6" x2="401.2" y2="112.3" stroke="#2ca02c"/>
+<circle cx="401.2" cy="125.2" r="5.6" fill="#2ca02c" fill-opacity="0.6"/>
+<line x1="442.1" y1="87.0" x2="442.1" y2="73.0" stroke="#2ca02c"/>
+<circle cx="442.1" cy="78.8" r="6.2" fill="#2ca02c" fill-opacity="0.6"/>
+<rect x="60" y="582" width="14" height="14" fill="#2ca02c"/>
+<text x="80" y="594">Isotonic, 5-fold OOF (repeat 1)</text>
+</svg>

@@ -1,0 +1,7 @@
+# Behavioral K-Means pipeline
+
+Student-presentation engagement features (early score mean/count, on-time rate, scheduled assessment coverage, early VLE clicks, active days/weeks/sites, and mapped activity-type breadth) use the same day 0–55 boundary as supervised features. IDs, outcome labels, and demographic fields are excluded. Already-withdrawn and unknown-timing withdrawal rows are excluded from the day-56 cohort.
+
+Median imputation and standard scaling are fitted on the student-disjoint 2013B/2013J training cohort only. K-Means candidates for k=2 through 6 use 20 initializations and a fixed seed; the highest training-cohort silhouette selects k, estimated on a fixed-seed sample of up to 5,000 training rows. Validation/test records are assigned to those fixed centers; they do not influence preprocessing or cluster selection. Training-cohort sizes and median raw feature profiles are written to `clustering_evaluation.json`. The serialized model and transform are reused for inference. Cluster IDs are arbitrary; no normative names are assigned. Human interpretation must compare observed patterns and context; a cluster is not a diagnosis or intervention rule.
+
+K-Means forces every record into a cluster and assumes roughly compact scaled groups. Silhouette does not prove meaningful groups. Results may change with scaling, cohort, or missingness; inspect stability and usefulness before operational use.

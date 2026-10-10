@@ -1,0 +1,243 @@
+{
+  "run_utc": "20261010T045341Z",
+  "created_test_account": {
+    "email": "audit-e2e-coordinator-20261010T045341Z@example.com",
+    "user_id": "b0ca897d-dd2a-4318-a9b6-d72d9350abdb",
+    "role": "coordinator",
+    "note": "audit marker account; password not recorded"
+  },
+  "passed": 45,
+  "failed": 1,
+  "results": [
+    {
+      "check": "GET /health",
+      "pass": true,
+      "detail": "{\"status\":\"ok\"}"
+    },
+    {
+      "check": "preflight POST /api/auth/login (Chrome PNA)",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "preflight POST /api/auth/register (Chrome PNA)",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "preflight GET /api/students (Chrome PNA)",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "simple CORS response carries allow-origin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no token -> 401 /api/auth/me",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/students",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/analytics/overview",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "no token -> 401 /api/predictions",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "garbage token -> 401",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "coordinator register with wrong invite -> 403",
+      "pass": true,
+      "detail": "403"
+    },
+    {
+      "check": "weak password rejected -> 422",
+      "pass": true,
+      "detail": "422"
+    },
+    {
+      "check": "coordinator register (marked test account) -> 201",
+      "pass": true,
+      "detail": "201"
+    },
+    {
+      "check": "duplicate register -> 409",
+      "pass": true,
+      "detail": "409"
+    },
+    {
+      "check": "login wrong password -> 401",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "login (case-insensitive email) -> 200 + bearer token",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "GET /auth/me -> coordinator",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "coordinator GET /api/students -> 200",
+      "pass": true,
+      "detail": "200 28"
+    },
+    {
+      "check": "coordinator GET /api/analytics/overview -> 200",
+      "pass": true,
+      "detail": "200 ['enrollments', 'imports_total', 'intervention_status_counts', 'interventions_open', 'latest_import', 'mean_recorded_score', 'outcome_forecast_distribution', 'performance_distribution']"
+    },
+    {
+      "check": "coordinator GET /api/analytics/risk-trends -> 200",
+      "pass": true,
+      "detail": "200 1"
+    },
+    {
+      "check": "coordinator GET /api/analytics/engagement -> 200",
+      "pass": true,
+      "detail": "200 ['weeks']"
+    },
+    {
+      "check": "coordinator GET /api/analytics/monitoring/students -> 200",
+      "pass": true,
+      "detail": "200 ['items', 'limit', 'offset', 'total']"
+    },
+    {
+      "check": "coordinator GET /api/predictions -> 200",
+      "pass": true,
+      "detail": "200 44"
+    },
+    {
+      "check": "coordinator GET /api/clusters -> 200",
+      "pass": true,
+      "detail": "200 23"
+    },
+    {
+      "check": "coordinator GET /api/analytics/clusters -> 200",
+      "pass": true,
+      "detail": "200 2"
+    },
+    {
+      "check": "coordinator GET /api/interventions -> 200",
+      "pass": true,
+      "detail": "200 0"
+    },
+    {
+      "check": "coordinator GET /api/access-requests -> 200",
+      "pass": true,
+      "detail": "200 0"
+    },
+    {
+      "check": "coordinator GET /imports/template -> CSV",
+      "pass": true,
+      "detail": "text/csv; charset=utf-8"
+    },
+    {
+      "check": "student list size matches DB count (28)",
+      "pass": true,
+      "detail": "28"
+    },
+    {
+      "check": "prediction records expose fields the frontend reads",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all stored scores and thresholds in [0,1]",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "priority_band values are the two the UI knows",
+      "pass": true,
+      "detail": "['no_flag_from_model', 'review_for_support']"
+    },
+    {
+      "check": "band agrees with score >= stored threshold",
+      "pass": true,
+      "detail": "44 predictions"
+    },
+    {
+      "check": "coordinator GET /api/students/{id} -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "coordinator GET /api/predictions/{id} -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "coordinator GET /api/students/{id}/performance -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "coordinator GET /api/students/{id}/engagement -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "coordinator GET /api/students/{id}/study-plan -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "coordinator GET /api/students/{id}/motivational-messages -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "unknown student -> 404",
+      "pass": true,
+      "detail": "404"
+    },
+    {
+      "check": "coordinator on student-only /students/me -> 403",
+      "pass": false,
+      "detail": "404"
+    },
+    {
+      "check": "pagination limit validated -> 422",
+      "pass": true,
+      "detail": "422"
+    },
+    {
+      "check": "change-password -> 200",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "check": "old token rejected after password change -> 401",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "old password rejected -> 401",
+      "pass": true,
+      "detail": "401"
+    },
+    {
+      "check": "login with new password -> 200",
+      "pass": true,
+      "detail": "200"
+    }
+  ]
+}

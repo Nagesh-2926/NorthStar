@@ -1,0 +1,76 @@
+--- a/frontend/src/pages/CoordinatorImportsPage.jsx
++++ b/frontend/src/pages/CoordinatorImportsPage.jsx
+@@ -240,7 +240,7 @@
+       </div>
+       <label className="import-file-label" htmlFor="coordinator-csv">
+         <span>CSV file</span>
+-        <input id="coordinator-csv" type="file" accept=".csv,text/csv"
++        <input id="coordinator-csv" type="file" accept=".csv,text/csv" disabled={Boolean(busy)}
+           onChange={(event) => {
+             setFile(event.target.files?.[0] || null);
+             setValidatedFile(null);
+@@ -249,7 +249,7 @@
+             setError('');
+           }} />
+       </label>
+-      {file && <p className="microcopy">Selected: {file.name} · {(file.size / 1024).toFixed(1)} KB</p>}
++      {file && <p className="microcopy import-selected-file">Selected: {file.name} · {(file.size / 1024).toFixed(1)} KB</p>}
+       <div className="import-actions">
+         <button className="button button-secondary" disabled={!file || Boolean(busy)}
+           onClick={validate} type="button">{busy === 'validate' ? 'Validating…' : 'Validate file'}</button>
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -147,6 +147,7 @@
+ .import-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+ .import-file-label { display: grid; gap: 7px; margin: 22px 0 8px; color: var(--muted); font-size: 11px; font-weight: 600; }
+ .import-file-label input { max-width: 100%; color: var(--ink); font: inherit; }
++.import-selected-file { display: block; overflow-wrap: anywhere; }
+ .import-stage { display: grid; gap: 12px; border-top: 1px solid var(--line); margin-top: 20px; padding-top: 18px; }
+ .import-stage > .section-heading { margin-bottom: 0; }
+ .import-stage .microcopy { margin: 0; }
+--- a/frontend/src/test/AppFlows.test.jsx
++++ b/frontend/src/test/AppFlows.test.jsx
+@@ -646,6 +646,43 @@
+   describe('CSV import results presentation', () => {
+     const validationOk = { valid: true, total_rows: 3, valid_rows: 3, invalid_rows: 0, forecast_rows: 1, errors: [] };
+ 
++    it('keeps the selected CSV tied to its results while validation and import are pending', async () => {
++      const user = userEvent.setup();
++      let finishValidation;
++      let finishImport;
++      services.importsApi.validate.mockImplementation(() => new Promise((resolve) => { finishValidation = resolve; }));
++      services.importsApi.create.mockImplementation(() => new Promise((resolve) => { finishImport = resolve; }));
++      render(<MemoryRouter><CoordinatorImportsPage /></MemoryRouter>);
++      const picker = screen.getByLabelText('CSV file');
++      const file = new File(['fixture'], 'original.csv', { type: 'text/csv' });
++      const replacement = new File(['different fixture'], 'replacement.csv', { type: 'text/csv' });
++      await user.upload(picker, file);
++      await user.click(screen.getByRole('button', { name: 'Validate file' }));
++      expect(picker).toBeDisabled();
++      await user.upload(picker, replacement);
++      expect(picker.files[0]).toBe(file);
++      expect(screen.queryByText(/Selected: replacement.csv/)).not.toBeInTheDocument();
++
++      finishValidation(validationOk);
++      await screen.findByRole('heading', { name: 'File check' });
++      expect(picker).toBeEnabled();
++      await user.click(screen.getByRole('button', { name: /Import and analyze/i }));
++      expect(picker).toBeDisabled();
++      await user.upload(picker, replacement);
++      expect(picker.files[0]).toBe(file);
++      expect(services.importsApi.create).toHaveBeenCalledWith(file);
++      finishImport({ import_id: 'import-1', total_rows: 1, invalid_rows: 0,
++        records: [{ source_row: 2, prediction_id: 'prediction-1', cluster_id: 0, forecast_id: null }] });
++      await screen.findByRole('heading', { name: 'Import results' });
++      expect(picker).toBeEnabled();
++      expect(screen.getByText(/Selected: original.csv/)).toBeInTheDocument();
++
++      await user.upload(picker, replacement);
++      expect(screen.getByText(/Selected: replacement.csv/)).toBeInTheDocument();
++      expect(screen.queryByRole('heading', { name: 'Import results' })).not.toBeInTheDocument();
++      expect(screen.getByRole('button', { name: /Import and analyze/i })).toBeDisabled();
++    });
++
+     async function runImport(importResponse, validationResponse = validationOk) {
+       const user = userEvent.setup();
+       services.importsApi.validate.mockResolvedValue(validationResponse);

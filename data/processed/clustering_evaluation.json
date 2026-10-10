@@ -1,0 +1,95 @@
+{
+  "feature_version": "oulad-early-risk-v2",
+  "features": [
+    "early_assessment_mean",
+    "early_assessment_count",
+    "early_on_time_rate",
+    "early_assessment_coverage",
+    "early_vle_clicks",
+    "early_vle_active_days",
+    "early_vle_active_weeks",
+    "early_vle_active_sites",
+    "early_vle_activity_types"
+  ],
+  "selection": "maximum train-cohort silhouette over k=2..6; silhouette sampled up to 5,000 train rows",
+  "fit_periods": [
+    "2013B",
+    "2013J"
+  ],
+  "student_independence": {
+    "rows": {
+      "train": 11439,
+      "validation": 5634,
+      "test": 7626
+    },
+    "unique_students": {
+      "train": 11334,
+      "validation": 5381,
+      "test": 7334
+    },
+    "excluded_validation_rows": 580,
+    "excluded_validation_students": 575,
+    "excluded_test_rows": 1168,
+    "excluded_test_students": 1145,
+    "policy": "Keep 2013B/2013J for train, purge train IDs from 2014B, then purge train and retained validation IDs from 2014J."
+  },
+  "training_rows": 11439,
+  "candidates": [
+    {
+      "k": 2,
+      "silhouette": 0.4879266512477512
+    },
+    {
+      "k": 3,
+      "silhouette": 0.28107218589760896
+    },
+    {
+      "k": 4,
+      "silhouette": 0.3188350368292331
+    },
+    {
+      "k": 5,
+      "silhouette": 0.32388826456202635
+    },
+    {
+      "k": 6,
+      "silhouette": 0.27493432566365855
+    }
+  ],
+  "selected_k": 2,
+  "selected_silhouette": 0.4879266512477512,
+  "profiles": [
+    {
+      "cluster_id": 0,
+      "size": 9572,
+      "median_feature_values": {
+        "early_assessment_mean": 76.0,
+        "early_assessment_count": 2.0,
+        "early_on_time_rate": 1.0,
+        "early_assessment_coverage": 1.0,
+        "early_vle_clicks": 420.0,
+        "early_vle_active_days": 23.0,
+        "early_vle_active_weeks": 8.0,
+        "early_vle_active_sites": 33.5,
+        "early_vle_activity_types": 8.0
+      },
+      "interpretation": "Review observed medians against the cohort; no normative label assigned."
+    },
+    {
+      "cluster_id": 1,
+      "size": 1867,
+      "median_feature_values": {
+        "early_assessment_mean": 62.0,
+        "early_assessment_count": 0.0,
+        "early_on_time_rate": 1.0,
+        "early_assessment_coverage": 0.0,
+        "early_vle_clicks": 31.0,
+        "early_vle_active_days": 3.0,
+        "early_vle_active_weeks": 2.0,
+        "early_vle_active_sites": 7.0,
+        "early_vle_activity_types": 4.0
+      },
+      "interpretation": "Review observed medians against the cohort; no normative label assigned."
+    }
+  ]
+}

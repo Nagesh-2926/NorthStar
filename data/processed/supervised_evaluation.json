@@ -1,0 +1,171 @@
+{
+  "dataset": "OULAD",
+  "dataset_version": "501aac93b2fbf49bb160ddd567af7b5d6213d220937cf8098e2955476c426024",
+  "feature_version": "oulad-early-risk-v2",
+  "target": "final_result is Fail or Withdrawn on/after day 56 versus Pass or Distinction; withdrawals before day 56 or with unknown timing are excluded",
+  "prediction_horizon": "support signal by presentation day 56 to end-of-course result",
+  "split": {
+    "train": [
+      "2013B",
+      "2013J"
+    ],
+    "validation": [
+      "2014B"
+    ],
+    "test": [
+      "2014J"
+    ]
+  },
+  "student_independence": {
+    "rows": {
+      "train": 11439,
+      "validation": 5634,
+      "test": 7626
+    },
+    "unique_students": {
+      "train": 11334,
+      "validation": 5381,
+      "test": 7334
+    },
+    "excluded_validation_rows": 580,
+    "excluded_validation_students": 575,
+    "excluded_test_rows": 1168,
+    "excluded_test_students": 1145,
+    "policy": "Keep 2013B/2013J for train, purge train IDs from 2014B, then purge train and retained validation IDs from 2014J."
+  },
+  "cohort_eligibility": {
+    "source_rows": 32593,
+    "excluded_withdrawn_before_prediction_day": 6053,
+    "excluded_withdrawn_unknown_timing": 93,
+    "eligible_rows": 26447,
+    "policy": "Exclude withdrawals before day 56 and withdrawals with unknown timing; retain withdrawal outcomes on or after day 56."
+  },
+  "counts": {
+    "train": 11439,
+    "validation": 5634,
+    "test": 7626
+  },
+  "class_distribution": {
+    "all": {
+      "0": 15385,
+      "1": 11062
+    },
+    "train": {
+      "0": 6570,
+      "1": 4869
+    }
+  },
+  "imbalance_ratio_negative_to_positive": 1.3493530499075785,
+  "imbalance_handling": "No oversampling: classes are near-balanced overall; class weights used for LR/RF and scale_pos_weight for XGBoost.",
+  "selection_metric": "validation F2; recall receives greater weight because missed support cases matter",
+  "selected_model": "xgboost",
+  "selected_threshold": 0.18982425332069397,
+  "validation_results": {
+    "logistic_regression": {
+      "validation": {
+        "threshold": 0.058688,
+        "accuracy": 0.4666311679091232,
+        "precision": 0.4549262429429976,
+        "recall": 0.9952191235059761,
+        "f1": 0.624421947256593,
+        "f2": 0.8041980555018994,
+        "roc_auc": 0.7927978227933338,
+        "confusion_matrix": {
+          "tn": 131,
+          "fp": 2993,
+          "fn": 12,
+          "tp": 2498
+        }
+      },
+      "selection_metric": "validation F2",
+      "validation_f2": 0.8041980555018994
+    },
+    "random_forest": {
+      "validation": {
+        "threshold": 0.238475,
+        "accuracy": 0.5484558040468583,
+        "precision": 0.496499176276771,
+        "recall": 0.9605577689243028,
+        "f1": 0.6546293782242737,
+        "f2": 0.8092776584317938,
+        "roc_auc": 0.7927904260040504,
+        "confusion_matrix": {
+          "tn": 679,
+          "fp": 2445,
+          "fn": 99,
+          "tp": 2411
+        }
+      },
+      "selection_metric": "validation F2",
+      "validation_f2": 0.8092776584317938
+    },
+    "xgboost": {
+      "validation": {
+        "threshold": 0.189824,
+        "accuracy": 0.5591054313099042,
+        "precision": 0.5027083333333333,
+        "recall": 0.9613545816733068,
+        "f1": 0.6601915184678523,
+        "f2": 0.8130053908355795,
+        "roc_auc": 0.8008341792879698,
+        "confusion_matrix": {
+          "tn": 737,
+          "fp": 2387,
+          "fn": 97,
+          "tp": 2413
+        }
+      },
+      "selection_metric": "validation F2",
+      "validation_f2": 0.8130053908355795
+    }
+  },
+  "test_results": {
+    "logistic_regression": {
+      "threshold": 0.058688,
+      "accuracy": 0.3637555730396014,
+      "precision": 0.3595772787318362,
+      "recall": 0.9985326485693323,
+      "f1": 0.5287490287490287,
+      "f2": 0.736711053372307,
+      "roc_auc": 0.7641709464416728,
+      "confusion_matrix": {
+        "tn": 52,
+        "fp": 4848,
+        "fn": 4,
+        "tp": 2722
+      }
+    },
+    "random_forest": {
+      "threshold": 0.238475,
+      "accuracy": 0.5544190925780226,
+      "precision": 0.44107330761136443,
+      "recall": 0.9225972120322817,
+      "f1": 0.5968201233981965,
+      "f2": 0.7572564133445743,
+      "roc_auc": 0.7781155763846258,
+      "confusion_matrix": {
+        "tn": 1713,
+        "fp": 3187,
+        "fn": 211,
+        "tp": 2515
+      }
+    },
+    "xgboost": {
+      "threshold": 0.189824,
+      "accuracy": 0.5169158143194336,
+      "precision": 0.4217831482691052,
+      "recall": 0.9475421863536317,
+      "f1": 0.583728813559322,
+      "f2": 0.7584566596194503,
+      "roc_auc": 0.7697754428256995,
+      "confusion_matrix": {
+        "tn": 1359,
+        "fp": 3541,
+        "fn": 143,
+        "tp": 2583
+      }
+    }
+  },
+  "training_timestamp_utc": "2026-10-09T09:55:59.861839+00:00",
+  "python_version": "3.13.15"
+}

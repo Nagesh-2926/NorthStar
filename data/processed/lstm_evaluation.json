@@ -1,0 +1,77 @@
+{
+  "feature_version": "oulad-early-risk-v1",
+  "sequence_length_weeks": 8,
+  "prediction_horizon": "OULAD end-of-course Fail/Withdrawn outcome; inputs only presentation days 0-55",
+  "weekly_inputs": [
+    "weekly_clicks",
+    "weekly_active_days"
+  ],
+  "split": {
+    "train": [
+      "2013B",
+      "2013J"
+    ],
+    "validation": [
+      "2014B"
+    ],
+    "test": [
+      "2014J"
+    ]
+  },
+  "best_epoch": 5,
+  "student_independence": {
+    "rows": {
+      "train": 11439,
+      "validation": 5634,
+      "test": 7626
+    },
+    "unique_students": {
+      "train": 11334,
+      "validation": 5381,
+      "test": 7334
+    },
+    "excluded_validation_rows": 580,
+    "excluded_validation_students": 575,
+    "excluded_test_rows": 1168,
+    "excluded_test_students": 1145,
+    "policy": "Keep 2013B/2013J for train, purge train IDs from 2014B, then purge train and retained validation IDs from 2014J."
+  },
+  "epochs_run": 9,
+  "lstm_threshold_from_validation_f2": 0.19365094602108002,
+  "lstm_test": {
+    "threshold": 0.193651,
+    "accuracy": 0.4127983215316024,
+    "precision": 0.3766891891891892,
+    "recall": 0.9816581071166545,
+    "f1": 0.5444557477110885,
+    "f2": 0.7430031097290093,
+    "roc_auc": 0.7211601060086543,
+    "confusion_matrix": {
+      "tn": 472,
+      "fp": 4428,
+      "fn": 50,
+      "tp": 2676
+    }
+  },
+  "logistic_sequence_baseline_threshold": 0.1413016912406095,
+  "logistic_sequence_baseline_test": {
+    "threshold": 0.141302,
+    "accuracy": 0.37319695777602935,
+    "precision": 0.3628472222222222,
+    "recall": 0.9966984592809978,
+    "f1": 0.5320148815351479,
+    "f2": 0.7386363636363636,
+    "roc_auc": 0.7158929132915088,
+    "confusion_matrix": {
+      "tn": 129,
+      "fp": 4771,
+      "fn": 9,
+      "tp": 2717
+    }
+  },
+  "limitations": [
+    "Only eight early weeks are available at the chosen cutoff.",
+    "OULAD is historical and observational; activity is not attendance or learning quality.",
+    "One later presentation is held out, so performance uncertainty is substantial."
+  ]
+}

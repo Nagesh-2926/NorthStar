@@ -1,0 +1,48 @@
+{
+  "target": "127.0.0.1:5433/student_support",
+  "server_port_inside_container": 5432,
+  "transaction_read_only": "on",
+  "alembic_version": "1d7c8f2a6b91",
+  "counts": {
+    "users": 30,
+    "students": 28,
+    "enrollments": 27,
+    "predictions": 44,
+    "interventions": 0,
+    "study_plans": 0,
+    "dataset_imports": 1,
+    "imported_feature_snapshots": 23,
+    "behavioral_clusters": 23,
+    "student_access_requests": 1,
+    "academic_records": 0,
+    "engagement_records": 0,
+    "grade_predictions": 0,
+    "motivational_messages": 0
+  },
+  "users_by_role": {
+    "coordinator": 2,
+    "student": 28
+  },
+  "prediction_versions": [
+    [
+      "lstm_weekly",
+      "1.2.0",
+      "oulad-early-risk-v1",
+      21
+    ],
+    [
+      "xgboost",
+      "1.2.0",
+      "oulad-early-risk-v2",
+      23
+    ]
+  ],
+  "lstm_rows_labelled_1_2_0": 21,
+  "audit_marker_account": [
+    {
+      "role": "coordinator",
+      "is_active": true,
+      "token_version": 1
+    }
+  ]
+}
