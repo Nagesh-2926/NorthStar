@@ -22,3 +22,7 @@ backups/
 
 data/processed/application_enrollment_registry.json
 data/processed/application_enrollment_registry.json.lock
+
+# Over GitHub's 100 MiB file limit: kept locally only (see docs/repository-cleanup-report.md section 10)
+Northstar_Student_Performance_Demo.zip
+ml/saved_models/random_forest.joblib

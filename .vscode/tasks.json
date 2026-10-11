@@ -5,7 +5,8 @@
       "label": "Backend: Start FastAPI",
       "type": "process",
       "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-      "args": ["-m", "uvicorn", "backend.app.main:app", "--reload", "--host", "127.0.0.1", "--port", "8001"],
+      "args": ["-m", "scripts.with_isolated_db", "--require-free-port", "8001", "--",
+               "${workspaceFolder}\\.venv\\Scripts\\python.exe", "-m", "uvicorn", "backend.app.main:app", "--reload", "--host", "127.0.0.1", "--port", "8001"],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
@@ -13,7 +14,8 @@
       "label": "Backend: Apply migrations",
       "type": "process",
       "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
-      "args": ["-m", "alembic", "-c", "backend\\alembic.ini", "upgrade", "head"],
+      "args": ["-m", "scripts.with_isolated_db", "--",
+               "${workspaceFolder}\\.venv\\Scripts\\python.exe", "-m", "alembic", "-c", "backend\\alembic.ini", "upgrade", "head"],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
