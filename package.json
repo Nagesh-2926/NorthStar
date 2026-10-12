@@ -1,16 +1,16 @@
 {
   "name": "northstar",
   "private": true,
-  "description": "Shortcut scripts for running the NorthStar backend (FastAPI) and frontend (Vite). Windows / cmd syntax. Backend and migrations target the isolated database (127.0.0.1:5433) via scripts/with_isolated_db.py without editing .env.",
+  "description": "Setup and run the NorthStar backend (FastAPI) and frontend (Vite) with database migrations from the configured .env.",
   "scripts": {
-    "setup": "npm run setup:backend && npm run setup:frontend",
+    "setup": "py -3.13 -m venv .venv && npm run setup:backend && npm run setup:frontend",
     "setup:backend": ".venv\\Scripts\\python.exe -m pip install -r ml\\requirements-lock.txt -r backend\\requirements-lock.txt",
     "setup:frontend": "npm --prefix frontend install",
 
     "db": "docker start northstar-local-db-1",
-    "migrate": ".venv\\Scripts\\python.exe -m scripts.with_isolated_db -- .venv\\Scripts\\python.exe -m alembic -c backend\\alembic.ini upgrade head",
+    "migrate": ".venv\\Scripts\\python.exe -m scripts.setup_database",
 
-    "backend": ".venv\\Scripts\\python.exe -m scripts.with_isolated_db --require-free-port 8001 -- .venv\\Scripts\\python.exe -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8001",
+    "backend": ".venv\\Scripts\\python.exe -m scripts.run_backend",
     "frontend": "npm --prefix frontend run dev -- --host=127.0.0.1 --port=5173",
     "dev": "start \"NorthStar backend\" npm run backend && npm run frontend",
 

@@ -54,7 +54,13 @@ def test_fixture_is_deterministic_and_matches_committed_files(canonical):
     second = fixture.fixture_files(fixture.build_fixture(canonical, fixture.known_issued_numbers()))
     for name in (fixture.VALID_CSV, fixture.REJECTIONS_CSV, fixture.MAPPING_CSV):
         assert first[name] == second[name]
-        assert first[name] == (DIR / name).read_bytes(), f"{name} is stale; regenerate the fixture"
+        committed = (DIR / name).read_bytes()
+        # Git may check these tracked CSVs out with CRLF on Windows. Compare exact
+        # content while treating CRLF and the generator's canonical LF as equivalent.
+        assert b"\r" not in committed.replace(b"\r\n", b""), f"{name} has invalid line endings"
+        assert first[name] == committed.replace(b"\r\n", b"\n"), (
+            f"{name} is stale; regenerate the fixture"
+        )
 
 
 def test_synthetic_numbers_are_reserved_unique_and_never_issued(mapping):

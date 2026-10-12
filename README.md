@@ -128,51 +128,30 @@ Vite variables are public browser configuration; never put secrets in them.
 
 ## Install and run (Windows PowerShell / VS Code)
 
-> **Existing local setup with `northstar-local-db-1` (port 5433): use the root npm scripts, not the generic commands below.**
-> The generic commands read `DATABASE_URL` and `POSTGRES_PORT` from `.env`. If `.env` points at another
-> database (for example the separate `student-db-1` on port 5432), `alembic upgrade` and `uvicorn` would use it,
-> and `docker compose up -d db` would create a *new, empty* `northstar-db-1` container instead of starting
-> `northstar-local-db-1`. The root scripts leave `.env` unchanged and use `scripts/with_isolated_db.py`, which
-> runs the command with `DATABASE_URL` pointed at `127.0.0.1:5433`, refuses port 5432, and refuses to start
-> a second backend on an occupied port:
->
-> ```powershell
-> npm run db        # docker start northstar-local-db-1 (starts the existing container; never creates one)
-> npm run migrate   # alembic upgrade head against 127.0.0.1:5433 (only when new migrations exist)
-> npm run dev       # backend on 8001 (new window) + frontend on 5173
-> ```
+The backend reads its PostgreSQL connection from root `.env`. The checked-in `.env.example` is a local template; set `DATABASE_URL` to your PostgreSQL connection string. Neon URLs should use the installed psycopg 3 driver, for example `postgresql+psycopg://...?...sslmode=require`. Keep the URL and all credentials private. `schema.sql` is a readable snapshot generated from the Alembic migration history; Alembic remains the source of truth.
 
-Open this folder in VS Code. Use one terminal for the database/API and a second for the frontend.
+Run the setup and app from the repository root:
 
 ```powershell
-py -3.13 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r ml\requirements-lock.txt
-.\.venv\Scripts\python.exe -m pip install -r backend\requirements-lock.txt
 if (-not (Test-Path .env)) { Copy-Item .env.example .env }
-# Keep Docker's user-install CLI available in this terminal when it is not already on PATH.
-$env:PATH="$env:LOCALAPPDATA\Programs\DockerDesktop\resources\bin;$env:PATH"
-# Configure secrets locally; do not replace an existing .env.
-docker compose up -d db
-.\.venv\Scripts\python.exe -m alembic -c backend\alembic.ini upgrade head
-.\.venv\Scripts\python.exe -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8001
+npm run setup       # creates the venv first if needed, then installs Python and frontend packages
+npm run migrate     # creates/updates the schema in DATABASE_URL
+npm run dev         # applies pending migrations, starts API on 8001 and frontend on 5173
 ```
 
-In another terminal:
+`npm run db` starts the optional local Docker PostgreSQL container. Do not run it when you intend to use Neon. For the frontend alone, configure `frontend/.env.local` from its example and run:
 
 ```powershell
-cd frontend
-if (-not (Test-Path .env.local)) { Copy-Item .env.example .env.local }
-npm ci
-npm run dev -- --host=127.0.0.1 --port=5173
+npm --prefix frontend run dev -- --host=127.0.0.1 --port=5173
 ```
 
-Open the Vite URL at `http://127.0.0.1:5173`. FastAPI is at `http://127.0.0.1:8001`, Swagger UI at `/docs`, and readiness at `/health`. To register a coordinator, choose Coordinator at `/register` and enter the `COORDINATOR_INVITE_CODE` from the backend environment. A student can self-register. A coordinator adds enrollments, assessment schedules, scores, and weekly activity in the student detail page before requesting model review.
+Open the Vite URL at `http://127.0.0.1:5173`. FastAPI is at `http://127.0.0.1:8001`, Swagger UI at `/docs`, and readiness at `/health`. A coordinator registers at `/register` using `COORDINATOR_INVITE_CODE`; students can self-register.
 
-Model scoring uses the saved day-56 feature contract and requires all eight weekly records for course weeks 0-7. Enter an explicit zero record only for a week that was observed to have no platform activity; missing weeks are not treated as zero. On a coordinator's student detail page, **Run model review**, **Run weekly forecast**, and **Refresh engagement group** save supervised, LSTM, and K-Means results respectively. The student can then view saved results and request a supportive study plan. Incomplete sequence history returns a clear 409 response and no forecast is saved.
+Model review requires course enrollment data and all eight weekly records for course weeks 0–7. A coordinator can run model review, weekly forecast, and engagement group refresh from a student's detail page. Missing weeks are not treated as zero activity.
 
-Gemini personalization is optional. To enable it, set `LLM_PROVIDER=gemini`, provide a server-side `GEMINI_API_KEY`, and choose a currently supported `GEMINI_MODEL` in `.env`; restart the backend. Gemini only writes suggestions after an ML review exists. The app sends a coarse review band and limited academic/activity summaries, validates the returned JSON and supportive language, and uses the local fallback after timeouts, provider errors, invalid keys, empty output, or rejected content. The Gemini adapter follows Google's [GenerateContent REST API](https://ai.google.dev/gemini-api/docs/generate-content) and keeps the key in the `x-goog-api-key` request header. The default example model is `gemini-3.5-flash-lite`.
+Gemini personalization is optional. To enable it, set `LLM_PROVIDER=gemini`, provide a server-side `GEMINI_API_KEY`, and choose a supported `GEMINI_MODEL` in root `.env`. When disabled or unavailable, the app uses its local fallback.
 
-The `.vscode/tasks.json` file provides VS Code tasks for applying migrations, starting the backend and frontend, running the Python test suite, and refreshing the OULAD models. Configure `.env` before launching the backend tasks; migrations and API startup read the same backend settings. These tasks use `.env` directly and do not go through `scripts/with_isolated_db.py`; on a setup where `.env` points at a different database than `northstar-local-db-1`, use the root npm scripts above instead.
+VS Code tasks are available for migrations, backend/frontend startup, tests, and model training. The backend startup task applies pending migrations before launching FastAPI.
 
 ## Train models
 
