@@ -8,6 +8,7 @@ from ml.features.canonical import CANONICAL_COLUMNS, write_canonical_training_da
 
 def write_csv(root, name, rows):
     pd.DataFrame(rows).to_csv(root / name, index=False)
+    
 
 
 @pytest.fixture
